@@ -8,7 +8,7 @@ function AllTeams() {
     useEffect(() => {
         const getTeams = async () => {
             try {
-                const response = await axios.get("/api/teams");
+                const response = await axios.get("https://team-backend-q0la.onrender.com/api/teams");
                 setTeams(response.data.teams);
             } catch (error) {
                 alert("Error fetching teams.");

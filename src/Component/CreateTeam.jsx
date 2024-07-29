@@ -20,7 +20,7 @@ const CreateTeam = () => {
         event.preventDefault();
 
         try {
-            const response = await axios.post("/api/create-team", {
+            const response = await axios.post("https://team-backend-q0la.onrender.com/api/create-team", {
                 teamName,
                 teamMembers,
                 teamLeader,
